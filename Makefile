@@ -1,7 +1,8 @@
 NAME = push_swap
 
-SRCS = 	 push_swap.c operations.c operations2.c ft_split.c /
-			sort1.c
+SRCS = 	 push_swap.c ft_split.c check_argc.c \
+        operations.c operations2.c sort1.c libft.c \
+		sort2.c stack_work.c push_w.c cleaning.c
 
 INCLUDE	=	push_swap.h
 
@@ -9,7 +10,7 @@ OBJS	=	$(SRCS:.c=.o)
 
 CC		=	gcc
 
-CFLAGS	=	-Wall -Wextra -Werror -I$(INCLUDE)
+CFLAGS	=	-Wall -Wextra -Werror -g -I$(INCLUDE)
 
 all		:	$(NAME)
 
